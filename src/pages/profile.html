@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль клиента | Taurim Design</title>
+    <link rel="stylesheet" href="../assets/css/profile.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+
+</head>
+<body>
+    <header class="header" id="main-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="../assets/images/logo.png" alt="Taurim Design">
+                </a>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Главная</a>
+                    <a href="services.html" class="nav-link">Услуги</a>
+                    <a href="portfolio.html" class="nav-link">Портфолио</a>
+                    <a href="contacts.html" class="nav-link">Контакты</a>
+                </nav>
+                <a href="profile.html" class="nav-link active">Профиль</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Хлебные крошки -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Главная</a> <span> > Профиль</span>
+        </div>
+    </section>
+
+    <!-- Промежуток -->
+    <div class="spacer"></div>
+
+    <!-- Основной контент -->
+    <div class="container">
+        <!-- Информация о пользователе -->
+        <div class="profile-section">
+            <div class="user-info">
+                <h1>Арсеньева Регина</h1>
+                <div class="user-details">
+                    <p><i class="fas fa-phone"></i> +7 (912) 345-67-89</p>
+                    <p><i class="fas fa-envelope"></i> regina.arsenieva@example.com</p>
+                    <p><i class="fas fa-calendar-alt"></i> Дата регистрации: 15.03.2022</p>
+                </div>
+            </div>
+            <div class="settings-icon">
+                <i class="fas fa-cog"></i>
+            </div>
+        </div>
+
+        <!-- Поля профиля -->
+        <div class="profile-field">
+            <h2>Мои проекты</h2>
+        </div>
+
+        <div class="profile-field">
+            <h2>Избранные работы</h2>
+        </div>
+
+        <div class="profile-field">
+            <h2>Избранные кураторы</h2>
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="footer-logo">
+                        <img src="../assets/images/logo.png" alt="Taurim Design">
+                    </a>
+                    <p class="footer-description">Taurim Design - студия дизайна интерьеров премиум-класса. Создаем уникальные пространства, отражающие вашу индивидуальность.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <ul class="footer-contacts">
+                        <li>+7 (495) 123-45-67</li>
+                        <li>hello@lumiere-design.ru</li>
+                        <li>Москва, ул. Тверская, 15</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Социальные сети</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Pinterest</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Быстрые ссылки</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="portfolio.html">Портфолио</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Taurim Design. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+       
+        document.querySelectorAll('.profile-field').forEach(field => {
+            field.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+                this.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.1)';
+            });
+            
+            field.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.05)';
+            });
+        });
+        
+        
+        document.querySelector('.settings-icon').addEventListener('click', function() {
+            alert('Переход к настройкам профиля');
+        });
+    </script>
+</body>
+</html>

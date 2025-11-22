@@ -1,0 +1,39 @@
+.user-header-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-initials {
+    width: 40px;
+    height: 40px;
+    background: #fbb6ce;
+    color: #1a365d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.user-name {
+    font-weight: 500;
+    color: white;
+}
+
+.logout-btn-header {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.logout-btn-header:hover {
+    background: white;
+    color: #1a365d;
+}

@@ -1,0 +1,287 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* Шапка сайта */
+.header {
+    background-color: #1a365d;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #fbb6ce;
+}
+
+.login-btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+/* Хлебные крошки */
+.breadcrumbs {
+    background-color: #1a365d;
+    padding: 20px 0;
+    margin-top: 90px;
+}
+
+.breadcrumbs a {
+    color: #fbb6ce;
+    text-decoration: none;
+}
+
+.breadcrumbs span {
+    color: white;
+}
+
+/* Промежуток */
+.spacer {
+    height: 20px;
+    background-color: #f7fafc;
+}
+
+/* Основной контент */
+.profile-section {
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #1a365d;
+}
+
+.user-details {
+    color: #7f8c8d;
+}
+
+.settings-icon {
+    font-size: 24px;
+    color: #1a365d;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.settings-icon:hover {
+    color: #e67e22;
+}
+
+/* Поля профиля */
+.profile-field {
+    margin-top: 20px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    padding: 20px;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.profile-field:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile-field::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 20px;
+    background-color: #1a365d;
+    border-radius: 8px 0 0 8px;
+}
+
+.profile-field h2 {
+    margin-left: 30px;
+    color: #1a365d;
+    font-size: 22px;
+}
+
+/* Футер */
+.footer {
+    background-color: #1a365d;
+    color: white;
+    padding: 60px 0 20px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-logo img {
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+.footer-description {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #fbb6ce;
+}
+
+.footer-contacts li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-link {
+    color: #fbb6ce;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: white;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #fbb6ce;
+}
+
+.footer-bottom {
+    border-top: 1px solid #2d3748;
+    padding-top: 20px;
+    text-align: center;
+    color: #a0aec0;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .header{
+        position: static;
+    }
+    
+    .nav, .auth-section {
+        display: none;
+    }
+    
+    .burger-menu {
+        display: flex;
+        position:static;
+    }
+
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul {
+        margin-top: 15px;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 0 10px;
+    }
+    
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .settings-icon {
+        margin-top: 15px;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .user-info h1 {
+        font-size: 24px;
+    }
+}

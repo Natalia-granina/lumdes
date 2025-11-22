@@ -1,0 +1,507 @@
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #1a365d;
+}
+
+.btn-primary {
+    background-color: #e53e3e;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #c53030;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-secondary:hover {
+    background-color: white;
+    color: #1a365d;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.btn-outline:hover {
+    background-color: #ffffff;
+    color: #1a365d;
+}
+
+
+/* Герой-секция */
+.hero {
+    height: 66.67vh;
+    position: relative;
+    margin-top: 90px;
+    overflow: hidden;
+}
+
+.hero-slider {
+    height: 100%;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide:nth-child(1) {
+    background-image: url('../images/hero-slide1.jpeg');
+}
+
+.slide:nth-child(2) {
+    background-image: url('../images/hero-slide2.jpg');
+}
+
+.slide:nth-child(3) {
+    background-image: url('../images/hero-slide3.jpg');
+}
+
+.slide-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 14, 34, 0.7) 70%, rgba(26, 54, 93, 0) 100%);
+}
+
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+    z-index: 2;
+    max-width: 500px;
+}
+
+.company-name {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.company-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.slider-controls {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    gap: 10px;
+    z-index: 3;
+}
+
+.slider-prev, .slider-next {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slider-prev:hover, .slider-next:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Промежуток */
+.spacer {
+    height: 40px;
+    background-color: #f7fafc;
+}
+
+/* Секция с призывом к действию */
+.cta-section {
+    height: 300px;
+    background-image: url('../images/living-room.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cta-title {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 30px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Секция преимуществ */
+.advantages {
+    padding: 80px 0;
+    background-color: #f7fafc;
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.advantage-item {
+    text-align: center;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.advantage-item:hover {
+    transform: translateY(-5px);
+}
+
+.advantage-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.advantage-icon svg {
+    width: 40px;
+    height: 40px;
+    fill: white;
+}
+
+.advantage-item h3 {
+    font-size: 1.3rem;
+    color: #1a365d;
+}
+
+/* Секция избранных работ */
+.featured-projects {
+    padding: 80px 0;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+.project-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.project-item.large {
+    grid-area: span 2;
+    height: 600px;
+}
+
+
+.project-item.small {
+    height: 290px;
+}
+
+.project-item.small:nth-child(4) {
+    grid-column: span 2;
+    height: 290px;
+}
+
+.project-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 54, 93, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.project-item:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-item:hover .project-image img {
+    transform: scale(1.05);
+}
+
+.project-overlay h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-overlay p {
+    margin-bottom: 20px;
+}
+
+/* Секция ключевых услуг */
+.services {
+    padding: 80px 0;
+    background-color: #f7fafc;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.service-item {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-icon svg {
+    width: 30px;
+    height: 30px;
+    fill: white;
+}
+
+.service-item h3 {
+    font-size: 1.2rem;
+    color: #1a365d;
+}
+
+.services-link {
+    text-align: center;
+}
+
+/* Секция процесса работы */
+.process {
+    padding: 80px 0;
+}
+
+.process-timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.process-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 30px;
+    width: 2px;
+    background-color: #e2e8f0;
+}
+
+.process-step {
+    display: flex;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 30px;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+.step-content {
+    padding-top: 10px;
+}
+
+.step-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #1a365d;
+}
+
+.step-content p {
+    color: #718096;
+}
+
+
+/* Адаптивность */
+@media (max-width: 992px) {
+    .advantages-grid,
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "large"
+            "small"
+            "small"
+            "small";
+    }
+    
+    .project-item.large,
+    .project-item.small {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header{
+        position: static;
+    }
+    
+    .nav, .auth-section {
+        display: none;
+    }
+    
+    .burger-menu {
+        display: flex;
+
+    }
+
+    .hero {
+        margin-top: 20px; 
+    }
+
+    .company-name {
+        font-size: 2.5rem;
+    }
+    
+    .cta-title {
+        font-size: 1.8rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .advantages-grid,
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .slide-overlay {
+        width: 100%;
+        background: linear-gradient(to bottom, rgba(26, 54, 93, 0.7) 0%, rgba(26, 54, 93, 0) 100%);
+    }
+    
+    .slide-content {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .project-item.large,
+    .project-item.small {
+        height: 250px;
+    }
+    
+    .process-timeline::before {
+        left: 20px;
+    }
+    
+    .step-number {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+        margin-right: 20px;
+    }
+}

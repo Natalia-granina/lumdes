@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    
+    <!--безопасность-->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!--Моб прил-->
+    <meta name="theme-color" content="#ffffff">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <!-- Social (OpenGraph)-->
+    <meta name="og:url" content="https://www.taurim-design.com/services">
+    <meta name="og:description" content="Услуги Taurim Design включают в себя: Дизайн-проект квартир/домов; Дизайн коммерческих помещений; Авторский надзор; Декорирование">
+    <meta name="og:title" content="Услуги - Taurim Design">
+    <meta name="og:image" content="https://s.iimg.su/s/25/g0oXid2xy2M9uYT0nzkCN5ai897i0qipBDYpzM4D.png">
+    <meta name="og:type" content="website">
+
+    <title>Услуги - Taurim Design</title>
+    <description>Услуги Taurim Design включают в себя: Дизайн-проект квартир/домов; Дизайн коммерческих помещений; Авторский надзор; Декорирование</description>
+    <link rel="stylesheet" href="../assets/css/services.css">
+    <link rel="stylesheet" href="../assets/css/general.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="../assets/images/logo.png" alt="Taurim Design">
+                </a>
+                <button class="burger-menu" id="burgerMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Главная</a>
+                    <a href="services.html" class="nav-link active">Услуги</a>
+                    <a href="portfolio.html" class="nav-link">Портфолио</a>
+                    <a href="contacts.html" class="nav-link">Контакты</a>
+                </nav>
+                <div class="auth-section" id="authSection">
+                <a href="autho.html" id="loginBtn"><button class="login-btn">Войти</button></a>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu-container">
+            <button class="close-menu" id="closeMenu">×</button>
+            <nav class="mobile-nav">
+                <a href="index.html" class="mobile-nav-link">Главная</a>
+                <a href="services.html" class="mobile-nav-link active">Услуги</a>
+                <a href="portfolio.html" class="mobile-nav-link">Портфолио</a>
+                <a href="contacts.html" class="mobile-nav-link">Контакты</a>
+                <a href="autho.html" class="mobile-nav-link mobile-login-btn">Войти</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Хлебные крошки -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Главная</a> <span> > Услуги</span>
+        </div>
+    </section>
+
+    <!-- Промежуток -->
+    <div class="spacer"></div>
+
+    <!-- Герой-секция -->
+    <section class="services-hero">
+        <div class="container">
+            <h1 class="static-title">Taurim Design</h1>
+        </div>
+    </section>
+
+    <!-- Секция с табами услуг -->
+    <section class="services-tabs">
+        <div class="container">
+            <h1 class="hero-title">Наши услуги</h1>
+            <div class="tabs-container">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="apartments">Дизайн-проект квартир/домов</button>
+                    <button class="tab-btn" data-tab="commercial">Дизайн коммерческих помещений</button>
+                    <button class="tab-btn" data-tab="supervision">Авторский надзор</button>
+                    <button class="tab-btn" data-tab="decor">Декорирование</button>
+                </div>
+                
+                <div class="tabs-content">
+                    <div class="tab-pane active" id="apartments">
+                        <div class="tab-content">
+                            <div class="tab-info">
+                                <h3>Что входит:</h3>
+                                <ul>
+                                    <li>Обмерочный план</li>
+                                    <li>Планировочное решение</li>
+                                    <li>Концепция интерьера</li>
+                                    <li>Подбор материалов и мебели</li>
+                                    <li>Рабочие чертежи для строителей</li>
+                                    <li>3D-визуализация</li>
+                                </ul>
+                                <h3>Для кого:</h3>
+                                <p>Для тех, кто хочет кардинальных изменений в своем жилом пространстве, ценит индивидуальный подход и стремится к гармонии в каждом элементе интерьера.</p>
+                            </div>
+                            <div class="tab-image">
+                                <img src="../assets/images/apartment-design.jpg" alt="Дизайн квартиры">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="commercial">
+                        <div class="tab-content">
+                            <div class="tab-info">
+                                <h3>Что входит:</h3>
+                                <ul>
+                                    <li>Анализ целевой аудитории и бизнес-процессов</li>
+                                    <li>Разработка эргономичного планировочного решения</li>
+                                    <li>Интеграция брендинга в интерьер</li>
+                                    <li>Создание атмосферы, способствующей бизнесу</li>
+                                    <li>Подбор долговечных и практичных материалов</li>
+                                    <li>Соблюдение нормативов и требований</li>
+                                </ul>
+                                <h3>Для кого:</h3>
+                                <p>Для владельцев офисов, кафе, ресторанов, розничных магазинов и других коммерческих пространств, которые хотят создать привлекательную и функциональную среду для клиентов и сотрудников.</p>
+                            </div>
+                            <div class="tab-image">
+                                <img src="../assets/images/commercial-design.jpg" alt="Дизайн коммерческого помещения">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="supervision">
+                        <div class="tab-content">
+                            <div class="tab-info">
+                                <h3>Что входит:</h3>
+                                <ul>
+                                    <li>Регулярный контроль выполнения работ</li>
+                                    <li>Взаимодействие с подрядчиками и поставщиками</li>
+                                    <li>Контроль качества материалов и исполнения</li>
+                                    <li>Решение возникающих вопросов на объекте</li>
+                                    <li>Соблюдение сроков реализации проекта</li>
+                                    <li>Финальная приемка работ</li>
+                                </ul>
+                                <h3>Для кого:</h3>
+                                <p>Для клиентов, которые хотят быть уверены, что дизайн-проект будет реализован точно в соответствии с задумкой, без компромиссов в качестве и с соблюдением всех нюансов.</p>
+                            </div>
+                            <div class="tab-image">
+                                <img src="../assets/images/supervision.jpg" alt="Авторский надзор">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="decor">
+                        <div class="tab-content">
+                            <div class="tab-info">
+                                <h3>Что входит:</h3>
+                                <ul>
+                                    <li>Анализ существующего интерьера</li>
+                                    <li>Подбор текстиля (шторы, подушки, покрывала)</li>
+                                    <li>Выбор аксессуаров и декоративных элементов</li>
+                                    <li>Подбор картин и предметов искусства</li>
+                                    <li>Рекомендации по освещению</li>
+                                    <li>Расстановка мебели и декора</li>
+                                </ul>
+                                <h3>Для кого:</h3>
+                                <p>Для тех, у кого уже есть готовый ремонт, но не хватает завершающих штрихов, которые превращают пространство в уютный и гармоничный дом.</p>
+                            </div>
+                            <div class="tab-image">
+                                <img src="../assets/images/decorating.jpg" alt="Декорирование">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Секция тарифов -->
+    <section class="pricing">
+        <div class="container">
+            <h2 class="section-title">Тарифы</h2>
+            <div class="pricing-content">
+                <div class="decorative-image left"></div>
+                <div class="pricing-cards">
+                    <div class="pricing-card">
+                        <h3>Базовый</h3>
+                        <div class="price">от 1500 руб/м²</div>
+                        <ul class="features">
+                            <li>Концепция интерьера</li>
+                            <li>3D-визуализация ключевых зон</li>
+                            <li>Планировочное решение</li>
+                            <li>Подбор цветовой гаммы</li>
+                        </ul>
+                        <button class="order-btn">Заказать</button>
+                    </div>
+                    <div class="pricing-card featured">
+                        <h3>Стандарт</h3>
+                        <div class="price">от 2500 руб/м²</div>
+                        <ul class="features">
+                            <li>Полный дизайн-проект</li>
+                            <li>Детальная 3D-визуализация</li>
+                            <li>Рабочие чертежи</li>
+                            <li>Подбор материалов и мебели</li>
+                            <li>Смета на материалы</li>
+                        </ul>
+                        <button class="order-btn">Заказать</button>
+                    </div>
+                    <div class="pricing-card">
+                        <h3>Премиум</h3>
+                        <div class="price">от 4000 руб/м²</div>
+                        <ul class="features">
+                            <li>Полный дизайн-проект</li>
+                            <li>Авторский надзор (6 месяцев)</li>
+                            <li>Ведение проекта "под ключ"</li>
+                            <li>Подбор подрядчиков</li>
+                            <li>Консультации на всех этапах</li>
+                        </ul>
+                        <button class="order-btn">Заказать</button>
+                    </div>
+                </div>
+                <div class="decorative-image right"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "Почему стоит работать с нами?" -->
+    <section class="why-us">
+        <div class="container">
+            <h2 class="section-title">Почему стоит работать с нами?</h2>
+            <div class="reasons-grid">
+                <div class="reason-item">
+                    <div class="reason-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                        </svg>
+                    </div>
+                    <h3>Профессиональные программы</h3>
+                    <p>Работаем в AutoCAD, 3ds Max, SketchUp и других профессиональных программах для создания точных и детализированных проектов.</p>
+                </div>
+                <div class="reason-item">
+                    <div class="reason-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                        </svg>
+                    </div>
+                    <h3>Опыт работы с поставщиками</h3>
+                    <p>Имеем налаженные связи с проверенными поставщиками материалов и мебели, что позволяет получать лучшие цены и гарантии качества.</p>
+                </div>
+                <div class="reason-item">
+                    <div class="reason-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M23 12l-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68L23 12zm-4.51 2.11l.26 2.79-2.74.62-1.43 2.41L12 18.82l-2.58 1.11-1.43-2.41-2.74-.62.26-2.8L3.66 12l1.85-2.12-.26-2.78 2.74-.61 1.43-2.41L12 5.18l2.58-1.11 1.43 2.41 2.74.62-.26 2.79L20.34 12l-1.85 2.11zM11 15h2v2h-2zm0-8h2v6h-2z"/>
+                        </svg>
+                    </div>
+                    <h3>Гарантия качества</h3>
+                    <p>Предоставляем гарантию на все наши работы и несем ответственность за результат вплоть до полной реализации проекта.</p>
+                </div>
+                <div class="reason-item">
+                    <div class="reason-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3>Индивидуальный подход</h3>
+                    <p>Каждый проект для нас уникален. Мы внимательно изучаем потребности клиента и создаем интерьер, который отражает его личность и образ жизни.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция призыва к действию -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Не нашли подходящую услугу?</h2>
+            <p>Свяжитесь с нами, и мы найдем решение!</p>
+            <a href="contacts.html" class="btn btn-primary">Связаться с нами</a>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="footer-logo">
+                        <img src="../assets/images/logo.png" alt="Taurim Design">
+                    </a>
+                    <p class="footer-description">Taurim Design - студия дизайна интерьеров премиум-класса. Создаем уникальные пространства, отражающие вашу индивидуальность.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <ul class="footer-contacts">
+                        <li>+7 (495) 123-45-67</li>
+                        <li>hello@lumiere-design.ru</li>
+                        <li>Москва, ул. Тверская, 15</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Социальные сети</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Pinterest</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Быстрые ссылки</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="portfolio.html">Портфолио</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Taurim Design. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/services.js"></script>
+    <script src="../assets/js/burger_menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+* {
+   margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(at bottom, #ffffff 35%, #122372 100%);
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+.button-style{
+    background: #ffffff;
+    color: #1a365d;
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-style:hover {
+    background-color: #e7e5e5;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.login-form {
+    padding: 40px;
+}
+
+.login-form h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1a365d;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #1a365d;
+    font-weight: 500;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #1a365d;
+    outline: none;
+}
+
+.loginbtn {
+    width: 100%;
+    background-color: #1a365d;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px;
+}
+
+.loginbtn:hover {
+    background-color: #fbb6ce;
+    color: black;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.register-link a {
+    color: #697277;
+    text-decoration: none;
+    margin-left: 5px;
+    font-weight: 500;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Адаптивность */
+@media (max-width: 480px) {
+    .login-form {
+        padding: 30px 20px;
+    }
+    
+    .login-form h1 {
+        font-size: 24px;
+    }
+}
+
+

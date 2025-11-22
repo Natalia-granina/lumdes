@@ -1,0 +1,422 @@
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #1a365d;
+}
+
+
+.btn-primary {
+    background-color: #e53e3e;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #c53030;
+}
+
+
+/* Хлебные крошки */
+.breadcrumbs {
+    background-color: #1a365d;
+    padding: 20px 0;
+    margin-top:100px;
+}
+
+.breadcrumbs a {
+    color: #fbb6ce;
+    text-decoration: none;
+}
+
+.breadcrumbs span {
+    color: white;
+}
+
+/* Промежуток */
+.spacer {
+    height: 20px;
+    background-color: #f7fafc;
+}
+
+/* Герой-секция */
+.services-hero {
+    height: 60px;
+    background-image: url('../images/living-room-bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    color: #1a365d;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.decorative-image {
+    width: 40px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+.decorative-image.left {
+    background-image: url('../images/decorative-left.jpg');
+}
+
+.decorative-image.right {
+    background-image: url('../images/decorative-right.jpg');
+}
+
+
+.hero-decoration {
+    width: 60px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-decoration.left {
+    background-image: url('../images/decorative-left.jpg');
+}
+
+.hero-decoration.right {
+    background-image: url('../images/decorative-right.jpg');
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: #1a365d;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Секция с табами услуг */
+.services-tabs {
+    padding: 80px 0;
+    background-color: #f7fafc;
+}
+
+.tabs-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tabs-header {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+    color: #4a5568;
+}
+
+.tab-btn.active {
+    color: #1a365d;
+    border-bottom: 3px solid #1a365d;
+}
+
+.tab-btn:hover {
+    color: #1a365d;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.tab-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.tab-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #1a365d;
+}
+
+.tab-info ul {
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.tab-info li {
+    margin-bottom: 10px;
+}
+
+.tab-info p {
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+.tab-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Секция тарифов */
+.pricing {
+    padding: 80px 0;
+}
+
+.pricing-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    flex: 1;
+}
+
+.pricing-card {
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(26, 54, 93, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+    position: relative;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(26, 54, 93, 0.15);
+}
+
+.pricing-card.featured {
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.pricing-card.featured:hover {
+    transform: scale(1.05) translateY(-5px);
+}
+
+.pricing-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #1a365d;
+}
+
+.price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #e53e3e;
+    margin-bottom: 20px;
+}
+
+.features {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.features li {
+    padding: 8px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.features li:last-child {
+    border-bottom: none;
+}
+
+.order-btn {
+    background-color: #fbb6ce;
+    color: #1a365d;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.order-btn:hover {
+    background-color: #f687b3;
+}
+
+/* Секция "Почему стоит работать с нами?" */
+.why-us {
+    padding: 80px 0;
+    background-color: #f7fafc;
+}
+
+.reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.reason-item {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.reason-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reason-icon svg {
+    width: 30px;
+    height: 30px;
+    fill: white;
+}
+
+.reason-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #1a365d;
+}
+
+.reason-item p {
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+/* Секция призыва к действию */
+.cta-section {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #1a365d;
+    color: white;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Адаптивность */
+@media (max-width: 992px) {
+    .tab-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .pricing-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .pricing-card.featured {
+        transform: scale(1);
+    }
+    
+    .pricing-card.featured:hover {
+        transform: translateY(-5px);
+    }
+    
+    .reasons-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .decorative-image {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .header{
+        position: static;
+    }
+    
+    .nav, .auth-section {
+        display: none;
+    }
+    
+    .burger-menu {
+        display: flex;
+    }
+    
+
+
+    .hero-title {
+        font-size: 2.5rem;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .hero-decoration {
+        width: 100%;
+        height: 3px;
+    }
+    
+    .tabs-header {
+        flex-direction: column;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .cta-section h2 {
+        font-size: 2rem;
+    }
+}

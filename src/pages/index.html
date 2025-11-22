@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    
+    <!--безопасность-->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!--Моб прил-->
+    <meta name="theme-color" content="#ffffff">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <!-- Social (OpenGraph)-->
+    <meta name="og:url" content="https://www.taurim-design.com">
+    <meta name="og:description" content="Наша компания разрабатывает премиальный дизайн интерьеров и пространств, в которых хочется жить и 
+        творить. Мы подходим индивидуально к каждому дизайн-проекту, отображая в нём именно Вашу историю">
+    <meta name="og:title" content="Taurim Design - Дизайн интерьера премиум-класса">
+    <meta name="og:image" content="https://s.iimg.su/s/25/g0oXid2xy2M9uYT0nzkCN5ai897i0qipBDYpzM4D.png">
+    <meta name="og:type" content="website">
+
+    <link rel="stylesheet" href="../assets/css/general.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Шапка-->
+    <header class="header" >
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="../assets/images/logo.png" alt="Taurim Design">
+                </a>
+
+                <button class="burger-menu" id="burgerMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <nav class="nav">
+                    <a href="index.html" class="nav-link active">Главная</a>
+                    <a href="services.html" class="nav-link">Услуги</a>
+                    <a href="portfolio.html" class="nav-link">Портфолио</a>
+                    <a href="contacts.html" class="nav-link">Контакты</a>
+                </nav>
+                <div class="auth-section" id="authSection">
+                <a href="autho.html" id="loginBtn"><button class="login-btn">Войти</button></a>
+                </div>
+
+                <!-- <div class="auth-section" id="authSection">
+                    <a href="autho.html" id="loginBtn"><button class="login-btn">Войти</button></a>
+
+                    <div id="userProfile" class="user-profile hidden">
+                        <div class="profile-container">
+                            <div class="profimageclass"><img id="profileImage" alt="Профиль" class="profile-image"></div>
+                            <div class="dropdown-menu">
+                                <div class="dropdown-item" onclick="goToProfile()">Перейти в профиль</div>
+                                <div class="dropdown-item" onclick="goToSettings()">Настройки</div>
+                                <div class="dropdown-item logout" onclick="logout()">Выйти</div>                            
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                
+            </div>
+        </div>
+    </header>
+
+
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu-container">
+            <button class="close-menu" id="closeMenu">×</button>
+            <nav class="mobile-nav">
+                <a href="index.html" class="mobile-nav-link active">Главная</a>
+                <a href="services.html" class="mobile-nav-link">Услуги</a>
+                <a href="portfolio.html" class="mobile-nav-link">Портфолио</a>
+                <a href="contacts.html" class="mobile-nav-link">Контакты</a>
+                <a href="autho.html" class="mobile-nav-link mobile-login-btn">Войти</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Герой-секция-->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide active">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h1 class="company-name">Taurim Design</h1>
+                    <p class="company-description">Премиальный дизайн интерьеров, который превосходит ожидания</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h1 class="company-name">Taurim Design</h1>
+                    <p class="company-description">Создаем пространства, в которых хочется жить и творить</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h1 class="company-name">Taurim Design</h1>
+                    <p class="company-description">Индивидуальный подход к каждому проекту</p>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="slider-prev">‹</button>
+            <button class="slider-next">›</button>
+        </div>
+    </section>
+
+    <!-- Промежуток -->
+    <div class="spacer"></div>
+
+    <!-- Секция с призывом к действию -->
+    <section class="cta-section">
+        <div class="container">
+            <h1 class="cta-title">Создадим интерьер, который расскажет вашу историю</h1>
+            <div class="cta-buttons">
+                <a href="contacts.html" class="btn btn-primary">Рассчитать стоимость</a>
+                <a href="portfolio.html" class="btn btn-secondary">Смотреть проекты</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция преимуществ -->
+    <section class="advantages">
+        <div class="container">
+            <h2 class="section-title">Наши преимущества</h2>
+            <div class="advantages-grid">
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3>150+ успешных проектов</h3>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                        </svg>
+                    </div>
+                    <h3>6 лет на рынке премиум-дизайна</h3>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+                        </svg>
+                    </div>
+                    <h3>Гарантия соблюдения сроков</h3>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+                        </svg>
+                    </div>
+                    <h3>Авторский надзор</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция избранных работ -->
+    <section class="featured-projects">
+        <div class="container">
+            <h2 class="section-title">Избранные работы</h2>
+            <div class="projects-grid">
+                <div class="project-item large">
+                    <div class="project-image">
+                        <img src="../assets/images/project1.jpg" alt="Лофт в центре Москвы">
+                        <div class="project-overlay">
+                            <h3>Лофт в центре Москвы</h3>
+                            <p>Современный лофт с элементами индустриального стиля</p>
+                            <a href="portfolio.html" class="btn btn-outline">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item small">
+                    <div class="project-image">
+                        <img src="../assets/images/project2.jpg" alt="Скандинавская квартира на Мосфильмовской">
+                        <div class="project-overlay">
+                            <h3>Скандинавская квартира на Мосфильмовской</h3>
+                            <p>Светлый и функциональный интерьер в скандинавском стиле</p>
+                            <a href="portfolio.html" class="btn btn-outline">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item small">
+                    <div class="project-image">
+                        <img src="../assets/images/project3.jpg" alt="Загородный дом в Подмосковье">
+                        <div class="project-overlay">
+                            <h3>Загородный дом в Подмосковье</h3>
+                            <p>Просторный дом в стиле современной классики</p>
+                            <a href="portfolio.html" class="btn btn-outline">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item small">
+                    <div class="project-image">
+                        <img src="../assets/images/project4.jpg" alt="Коммерческое помещение">
+                        <div class="project-overlay">
+                            <h3>Коммерческое помещение</h3>
+                            <p>Дизайн офиса для IT-компании</p>
+                            <a href="portfolio.html" class="btn btn-outline">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция ключевых услуг -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Ключевые услуги</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/>
+                        </svg>
+                    </div>
+                    <h3>Дизайн-проект квартир</h3>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                        </svg>
+                    </div>
+                    <h3>Дизайн коммерческих помещений</h3>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3>Авторский надзор</h3>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M21 16V4H3v12h18zm0-14c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2h-7v2h2v2H8v-2h2v-2H3c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h18z"/>
+                        </svg>
+                    </div>
+                    <h3>3D-визуализация</h3>
+                </div>
+            </div>
+            <div class="services-link">
+                <a href="services.html" class="btn btn-outline">Все услуги</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция процесса работы -->
+    <section class="process">
+        <div class="container">
+            <h2 class="section-title">Процесс работы</h2>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Знакомство и бриф</h3>
+                        <p>Обсуждаем ваши пожелания, бюджет и сроки реализации проекта</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Концепция и визуализация</h3>
+                        <p>Разрабатываем концепцию и создаем 3D-визуализацию будущего интерьера</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Разработка чертежей</h3>
+                        <p>Создаем подробные чертежи для строителей и подрядчиков</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Реализация и надзор</h3>
+                        <p>Контролируем процесс реализации проекта на всех этапах</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Сдача проекта</h3>
+                        <p>Финальная приемка работ и передача ключей</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="footer-logo">
+                        <img src="../assets/images/logo.png" alt="Taurim Design">
+                    </a>
+                    <p class="footer-description">Taurim Design - студия дизайна интерьеров премиум-класса. Создаем уникальные пространства, отражающие вашу индивидуальность.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <ul class="footer-contacts">
+                        <li>+7 (495) 123-45-67</li>
+                        <li>hello@lumiere-design.ru</li>
+                        <li>Москва, ул. Тверская, 15</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Социальные сети</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Pinterest</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Быстрые ссылки</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="portfolio.html">Портфолио</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Taurim Design. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/isautho.js"></script>
+    <script src="../assets/js/burger_menu.js"></script>
+</body>
+</html>

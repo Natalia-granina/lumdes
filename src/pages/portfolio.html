@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Портфолио - Taurim Design</title>
+    <meta name="description" content="Наши проекты, которые вдохновляют. В портфолио находятся работы по оформлению квартир, 
+        домов, офисов в разных стилях">
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!--Моб прил-->
+    <meta name="theme-color" content="#ffffff">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <!-- Social (OpenGraph)-->
+    <meta name="og:url" content="https://www.taurim-design.com/portfolio">
+    <meta name="og:description" content="Наши проекты, которые вдохновляют. В портфолио находятся работы по оформлению квартир, 
+        домов, офисов в разных стилях">
+    <meta name="og:title" content="Портфолио - Taurim Design">
+    <meta name="og:image" content="https://s.iimg.su/s/25/g0oXid2xy2M9uYT0nzkCN5ai897i0qipBDYpzM4D.png">
+    <meta name="og:type" content="website">
+
+    <link rel="stylesheet" href="../assets/css/portfolio.css">
+    <link rel="stylesheet" href="../assets/css/general.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <!-- Шапка сайта -->
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <img src="../assets/images/logo.png" alt="Taurim Design">
+            </a>
+
+            <button class="burger-menu" id="burgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Десктопное меню -->
+            <nav class="nav" >
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="services.html" class="nav-link">Услуги</a>
+                <a href="portfolio.html" class="nav-link active">Портфолио</a>
+                <a href="contacts.html" class="nav-link">Контакты</a>
+            </nav>
+            
+            <!-- Десктопная кнопка входа -->
+            <div class="auth-section" id="authSection">
+                <a href="autho.html" id="loginBtn">
+                    <button class="login-btn">Войти</button>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<!-- Мобильное меню -->
+<div class="mobile-menu-overlay" id="mobileMenuOverlay">
+    <div class="mobile-menu-container">
+        <button class="close-menu" id="closeMenu">×</button>
+        <nav class="mobile-nav">
+            <a href="index.html" class="mobile-nav-link">Главная</a>
+            <a href="services.html" class="mobile-nav-link">Услуги</a>
+            <a href="portfolio.html" class="mobile-nav-link active">Портфолио</a>
+            <a href="contacts.html" class="mobile-nav-link">Контакты</a>
+            <a href="autho.html" class="mobile-nav-link mobile-login-btn">Войти</a>
+        </nav>
+    </div>
+</div>
+
+    <!-- Хлебные крошки -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Главная</a> > <span>Портфолио</span>
+        </div>
+    </section>
+
+    <!-- Промежуток -->
+    <div class="spacer"></div>
+
+    <!-- Герой-секция -->
+    <section class="portfolio-hero">
+        <div class="container">
+            <h1 class="hero-title">Наши работы</h1>
+            <p class="hero-subtitle">Реализованные проекты, которые вдохновляют</p>
+        </div>
+    </section>
+
+    <!-- Секция фильтров -->
+    <section class="portfolio-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="apartments">Квартиры</button>
+                <button class="filter-btn" data-filter="houses">Дома</button>
+                <button class="filter-btn" data-filter="commercial">Коммерческие</button>
+                <button class="filter-btn" data-filter="scandinavian">Скандинавский стиль</button>
+                <button class="filter-btn" data-filter="loft">Лофт</button>
+                <button class="filter-btn" data-filter="minimalism">Минимализм</button>
+                <button class="filter-btn" data-filter="classic">Неоклассика</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Сетка проектов -->
+    <section class="portfolio-grid">
+        <div class="container">
+            <div class="masonry-grid">
+                <!-- Проект 1 -->
+                <div class="portfolio-item" data-category="apartments, scandinavian">
+                    <div class="portfolio-image">
+                        <img src="../assets/images/project1.jpg" alt="Квартира на Патриках для молодой семьи">
+                        <div class="portfolio-overlay">
+                            <a href="project-detail.html" class="view-project-btn">Смотреть проект</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Квартира на Патриках для молодой семьи</h3>
+                        <div class="portfolio-meta">
+                            <span class="area">Площадь: 85 м²</span>
+                            <span class="style">Стиль: Скандинавский</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Проект 2 -->
+                <div class="portfolio-item" data-category="apartments, loft">
+                    <div class="portfolio-image">
+                        <img src="../assets/images/project2.jpg" alt="Лофт в центре Москвы">
+                        <div class="portfolio-overlay">
+                            <a href="project-detail.html" class="view-project-btn">Смотреть проект</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Лофт в центре Москвы</h3>
+                        <div class="portfolio-meta">
+                            <span class="area">Площадь: 120 м²</span>
+                            <span class="style">Стиль: Лофт</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Проект 3 -->
+                <div class="portfolio-item" data-category="houses, classic">
+                    <div class="portfolio-image">
+                        <img src="../assets/images/project3.jpg" alt="Загородный дом в Подмосковье">
+                        <div class="portfolio-overlay">
+                            <a href="project-detail.html" class="view-project-btn">Смотреть проект</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Загородный дом в Подмосковье</h3>
+                        <div class="portfolio-meta">
+                            <span class="area">Площадь: 250 м²</span>
+                            <span class="style">Стиль: Неоклассика</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Проект 4 -->
+                <div class="portfolio-item" data-category="commercial, minimalism">
+                    <div class="portfolio-image">
+                        <img src="../assets/images/project4.jpg" alt="Офис IT-компании">
+                        <div class="portfolio-overlay">
+                            <a href="project-detail.html" class="view-project-btn">Смотреть проект</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Офис IT-компании</h3>
+                        <div class="portfolio-meta">
+                            <span class="area">Площадь: 300 м²</span>
+                            <span class="style">Стиль: Минимализм</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Проект 5 -->
+                <div class="portfolio-item" data-category="apartments, scandinavian">
+                    <div class="portfolio-image">
+                        <img src="../assets/images/project5.jpg" alt="Апартаменты на Мосфильмовской">
+                        <div class="portfolio-overlay">
+                            <a href="project-detail.html" class="view-project-btn">Смотреть проект</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Апартаменты на Мосфильмовской</h3>
+                        <div class="portfolio-meta">
+                            <span class="area">Площадь: 65 м²</span>
+                            <span class="style">Стиль: Скандинавский</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Проект 6 -->
+                <div class="portfolio-item" data-category="houses, minimalism">
+                    <div class="portfolio-image">
+                        <img src="../assets/images/project6.jpg" alt="Дом на Рублевке">
+                        <div class="portfolio-overlay">
+                            <a href="project-detail.html" class="view-project-btn">Смотреть проект</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Дом на Рублевке</h3>
+                        <div class="portfolio-meta">
+                            <span class="area">Площадь: 400 м²</span>
+                            <span class="style">Стиль: Минимализм</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Проект 7 -->
+                <div class="portfolio-item" data-category="commercial, loft">
+                    <div class="portfolio-image">
+                        <img src="../assets/images/project7.jpg" alt="Кафе в стиле лофт">
+                        <div class="portfolio-overlay">
+                            <a href="project-detail.html" class="view-project-btn">Смотреть проект</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Кафе в стиле лофт</h3>
+                        <div class="portfolio-meta">
+                            <span class="area">Площадь: 150 м²</span>
+                            <span class="style">Стиль: Лофт</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Проект 8 -->
+                <div class="portfolio-item" data-category="apartments, classic">
+                    <div class="portfolio-image">
+                        <img src="../assets/images/project8.jpg" alt="Квартира в историческом центре">
+                        <div class="portfolio-overlay">
+                            <a href="project-detail.html" class="view-project-btn">Смотреть проект</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Квартира в историческом центре</h3>
+                        <div class="portfolio-meta">
+                            <span class="area">Площадь: 110 м²</span>
+                            <span class="style">Стиль: Неоклассика</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция призыва к действию -->
+    <section class="portfolio-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Вы – творец своего комфорта и наслаждения</h2>
+                <p>Свяжитесь с нами и мы создадим для вас персонализированный проект или подстроим уже существующий дизайн под ваше пространство.</p>
+                <a href="contacts.html" class="btn btn-primary">Написать</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="footer-logo">
+                        <img src="../assets/images/logo.png" alt="Taurim Design">
+                    </a>
+                    <p class="footer-description">Taurim Design - студия дизайна интерьеров премиум-класса. Создаем уникальные пространства, отражающие вашу индивидуальность.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <ul class="footer-contacts">
+                        <li>+7 (495) 123-45-67</li>
+                        <li>hello@lumiere-design.ru</li>
+                        <li>Москва, ул. Тверская, 15</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Социальные сети</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Pinterest</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Быстрые ссылки</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="portfolio.html">Портфолио</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Taurim Design. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/portfolio.js"></script>
+    <script src="../assets/js/burger_menu.js"></script>
+</body>
+</html>
