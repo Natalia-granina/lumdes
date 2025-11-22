@@ -1,0 +1,10 @@
+{
+  "name": "taurim-design",
+  "version": "1.0.0",
+  "description": "Premium interior design frontend",
+  "private": true,
+  "scripts": {
+    "build": "echo 'Static site'",
+    "start": "echo 'Ready'"
+  }
+}
