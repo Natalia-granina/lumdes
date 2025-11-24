@@ -18,16 +18,36 @@
                 <a href="index.html" class="logo">
                     <img src="images/logo.png" alt="Taurim Design">
                 </a>
+                <button class="burger-menu" id="burgerMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <nav class="nav">
                     <a href="index.html" class="nav-link">Главная</a>
-                    <a href="services.html" class="nav-link active">Услуги</a>
+                    <a href="services.html" class="nav-link">Услуги</a>
                     <a href="portfolio.html" class="nav-link">Портфолио</a>
                     <a href="contacts.html" class="nav-link">Контакты</a>
                 </nav>
-                <a href="autho.html"><button class="login-btn">Войти</button></a>
+                <div class="auth-section" id="authSection">
+                    <a href="autho.html"><button class="login-btn">Войти</button></a>
+                </div>
             </div>
         </div>
     </header>
+    
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu-container">
+            <button class="close-menu" id="closeMenu">×</button>
+            <nav class="mobile-nav">
+                <a href="index.html" class="mobile-nav-link">Главная</a>
+                <a href="services.html" class="mobile-nav-link">Услуги</a>
+                <a href="portfolio.html" class="mobile-nav-link">Портфолио</a>
+                <a href="contacts.html" class="mobile-nav-link">Контакты</a>
+                <a href="autho.html" class="mobile-nav-link mobile-login-btn">Войти</a>
+            </nav>
+        </div>
+    </div>
     
     <div class="admin-container">
         <div class="admin-header">
@@ -77,5 +97,6 @@
 
     <script type="module" src="js/addUser.js"></script>
     <script type="module" src="js/output.js"></script>
-</body>
+<script src="js/burger_menu.js"></script></body>
 </html>
+

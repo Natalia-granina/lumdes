@@ -15,16 +15,36 @@
                 <a href="index.html" class="logo">
                     <img src="images/logo.png" alt="Taurim Design">
                 </a>
+                <button class="burger-menu" id="burgerMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <nav class="nav">
                     <a href="index.html" class="nav-link">Главная</a>
                     <a href="services.html" class="nav-link">Услуги</a>
                     <a href="portfolio.html" class="nav-link">Портфолио</a>
                     <a href="contacts.html" class="nav-link">Контакты</a>
                 </nav>
-                <a href="profile.html" class="nav-link active">Профиль</a>
+                <div class="auth-section" id="authSection">
+                    <a href="profile.html" class="nav-link active">Профиль</a>
+                </div>
             </div>
         </div>
     </header>
+    
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu-container">
+            <button class="close-menu" id="closeMenu">×</button>
+            <nav class="mobile-nav">
+                <a href="index.html" class="mobile-nav-link">Главная</a>
+                <a href="services.html" class="mobile-nav-link">Услуги</a>
+                <a href="portfolio.html" class="mobile-nav-link">Портфолио</a>
+                <a href="contacts.html" class="mobile-nav-link">Контакты</a>
+                <a href="profile.html" class="mobile-nav-link mobile-login-btn">Профиль</a>
+            </nav>
+        </div>
+    </div>
 
     <!-- Хлебные крошки -->
     <section class="breadcrumbs">
@@ -127,5 +147,6 @@
             alert('Переход к настройкам профиля');
         });
     </script>
-</body>
+<script src="js/burger_menu.js"></script></body>
 </html>
+
