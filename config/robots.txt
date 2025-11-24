@@ -1,11 +1,7 @@
 User-agent: *
-Disallow: /css/
-Disallow: /js/
 Disallow: /profile.html
 Disallow: /autho.html
 Disallow: /registr.html
 Disallow: /admin.html
-Allow: /index.html
-Allow: /services.html
-Allow: /contacts.html
-Allow: /portfolio.html
+Allow: /
+Sitemap: https://taurim-design.com/sitemap.xml
